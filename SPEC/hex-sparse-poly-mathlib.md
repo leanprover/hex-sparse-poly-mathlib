@@ -1,5 +1,12 @@
 # hex-sparse-poly-mathlib (depends on hex-sparse-poly + hex-poly-mathlib + Mathlib)
 
+## Correspondence-only classification
+
+This library is a `correspondence-only-layer`.
+
+Computational conformance owners: `HexSparsePoly`, `HexPoly`
+Computational performance owners: `HexSparsePoly`, `HexPoly`
+
 The Mathlib correspondence layer for the canonical, Mathlib-free sparse
 univariate polynomials in
 [hex-sparse-poly](../../HexSparsePoly/SPEC/hex-sparse-poly.md). It
@@ -72,10 +79,11 @@ invariant halves, via the core library's `mem_support_iff`.
 ## Verification
 
 Every conversion theorem is proved from coefficient extensionality on
-one side or the other. The conformance target checks representative
-round trips and operation correspondence against Mathlib's
-`Polynomial` by `decide`/`#guard` on concrete inputs, mirroring the
-`hex-mv-poly-mathlib` conformance module.
+one side or the other. Executable sparse and dense polynomial operations
+are checked by the `HexSparsePoly` and `HexPoly` conformance streams and
+their external oracles. This correspondence layer has no independent
+runtime contract or conformance target; building its public umbrella checks
+the theorem-level transport surface.
 
 ## External comparators
 
