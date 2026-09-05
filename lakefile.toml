@@ -9,12 +9,12 @@ leanOptions = [
 [[require]]
 name = "HexSparsePoly"
 git = "https://github.com/leanprover/hex-sparse-poly.git"
-rev = "9d99201ff495fe903b4d7467f7de2f017a5d46f8"
+rev = "6b980b6ee9c296f872bde1cc34b2343459d05180"
 
 [[require]]
 name = "HexPolyMathlib"
 git = "https://github.com/leanprover/hex-poly-mathlib.git"
-rev = "d4bbb82b87704d3016c6c1d822ae1f77c793958a"
+rev = "a9eb9de8c92b96f57660d02c468f9f8622066641"
 
 [[require]]
 name = "mathlib"
