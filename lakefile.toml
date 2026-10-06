@@ -7,27 +7,24 @@ leanOptions = [
 ]
 
 [[require]]
-name = "HexSparsePoly"
-git = "https://github.com/leanprover/hex-sparse-poly.git"
-rev = "v0.6.0"
+name = "HexPoly"
+git = "https://github.com/leanprover/hex-poly.git"
+rev = "v0.7.0"
 
 [[require]]
 name = "HexPolyMathlib"
 git = "https://github.com/leanprover/hex-poly-mathlib.git"
-rev = "v0.6.0"
+rev = "v0.7.0"
+
+[[require]]
+name = "HexSparsePoly"
+git = "https://github.com/leanprover/hex-sparse-poly.git"
+rev = "v0.7.0"
 
 [[require]]
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4.git"
-rev = "v4.34.0-rc2"
+rev = "d870b9068518a0870842d15a0cd42637ec30b587"
 
 [[lean_lib]]
 name = "HexSparsePolyMathlib"
-globs = [
-  "HexSparsePolyMathlib",
-  "HexSparsePolyMathlib.Equiv",
-]
-
-[[lean_lib]]
-name = "HexSparsePolyMathlibTests"
-globs = ["HexSparsePolyMathlib.LintTests"]
